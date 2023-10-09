@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9EAF1"
+    tools:context=".Preferences">
+
+    <ScrollView
+        android:layout_width="373dp"
+        android:layout_height="513dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consignes3">
+
+        <RelativeLayout
+            android:id="@+id/scrollview"
+            android:layout_width="376dp"
+            android:layout_height="515dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/coeur"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="320dp"
+                android:contentDescription="@string/coeurDesc"
+                app:srcCompat="@drawable/_077035"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <TextView
+                android:id="@+id/preferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="66dp"
+                android:text="@string/preferences"
+                android:textColor="#0E0E0E"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <TextView
+                android:id="@+id/Q1_Pref"
+                android:layout_width="352dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/preferences"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="6dp"
+                android:text="@string/Q1_Pref"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q2_Pref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chipGroupType"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="22dp"
+                android:text="@string/Q2_Pref"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nb_voyageurs"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q2_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="101dp"/>
+
+            <TextView
+                android:id="@+id/Q3_Pref"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chipGroupActivite"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/Q3_Pref"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q4_Pref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q3_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="41dp"
+                android:text="@string/Q4_Pref"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q5_Pref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiogroup_hebergement"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="21dp"
+                android:text="@string/Q5_Pref"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/previousButton2"
+                android:layout_width="52dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/Q5_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="166dp"
+                android:layout_marginEnd="267dp"
+                android:background="#031471"
+                android:contentDescription="@string/previous"
+                app:srcCompat="@android:drawable/ic_media_rew" />
+
+            <ImageButton
+                android:id="@+id/nextButton2"
+                android:layout_width="52dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/Q5_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="296dp"
+                android:layout_marginTop="166dp"
+                android:layout_marginEnd="31dp"
+                android:background="#031471"
+                android:contentDescription="@string/next"
+                app:srcCompat="@android:drawable/ic_media_ff" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_hebergement"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q4_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="158dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginEnd="53dp">
+
+                <RadioButton
+                    android:id="@+id/hotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/hotel" />
+
+                <RadioButton
+                    android:id="@+id/auberge"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/auberge" />
+
+                <RadioButton
+                    android:id="@+id/camping"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/camping" />
+
+                <RadioButton
+                    android:id="@+id/pasPref"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/pasPref" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/groupAlimentaire"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q5_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="105dp">
+
+                <RadioButton
+                    android:id="@+id/vege"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vege" />
+
+                <RadioButton
+                    android:id="@+id/vegan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vegan" />
+
+                <RadioButton
+                    android:id="@+id/aucuneRestriction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pasRestriction" />
+            </RadioGroup>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupActivite"
+                android:layout_width="138dp"
+                android:layout_height="144dp"
+                android:layout_below="@+id/Q2_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="134dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="103dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPlage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/plage" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipRando"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/rando" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMusee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/musée" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupType"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q1_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="100dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDetente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/detente" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCulinaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/culinaire" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAventure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/aventure" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCulturel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/culturel" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <SeekBar
+                android:id="@+id/seekBarSport"
+                android:layout_width="200dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/Q3_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="154dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/valeurSport"
+                android:layout_width="109dp"
+                android:layout_height="26dp"
+                android:layout_below="@+id/Q3_Pref"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="251dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/valeur"
+                android:textColor="#171717" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/consignes3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/consignes"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appliName4" />
+
+    <ImageView
+        android:id="@+id/logo4"
+        android:layout_width="89dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/logoAppli"
+        app:layout_constraintEnd_toStartOf="@id/appliName4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_planyourtrip" />
+
+    <TextView
+        android:id="@+id/appliName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/app_name"
+        android:textColor="#0961A6"
+        android:textColorHighlight="#00BCD4"
+        android:textSize="30sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonExit4"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#D9EAF1"
+        android:contentDescription="@string/buttonQuit"
+        android:src="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

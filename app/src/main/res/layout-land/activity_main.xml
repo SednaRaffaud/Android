@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9EAF1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageVoyage3"
+        android:layout_width="259dp"
+        android:layout_height="86dp"
+        android:contentDescription="@string/pictureDesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuiz"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cadeau_voyage" />
+
+    <TextView
+        android:id="@+id/appliName"
+        android:layout_width="310dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_name"
+        android:textColor="#0961A6"
+        android:textColorHighlight="#00BCD4"
+        android:textSize="40sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/logoAppli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_planyourtrip" />
+
+
+    <ImageView
+        android:id="@+id/imageVoyage"
+        android:layout_width="259dp"
+        android:layout_height="86dp"
+        android:contentDescription="@string/pictureDesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuiz"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cadeau_voyage" />
+
+    <ImageView
+        android:id="@+id/imageVoyage2"
+        android:layout_width="259dp"
+        android:layout_height="86dp"
+        android:contentDescription="@string/pictureDesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuiz"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cadeau_voyage" />
+
+    <Button
+        android:id="@+id/buttonQuiz"
+        android:layout_width="105dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue_button"
+        android:text="@string/buttonQuiz"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="68dp"
+        android:layout_height="27dp"
+        android:background="@color/blue_button"
+        android:text="@string/buttonQuit"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="631dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="311dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/textView1"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView2"
+        android:textColor="#131313"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
