@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9EAF1"
+    tools:context=".Caracteristique_Voyage">
+
+    <ScrollView
+        android:layout_width="373dp"
+        android:layout_height="513dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consignes2">
+
+        <RelativeLayout
+            android:id="@+id/scrollview"
+            android:layout_width="376dp"
+            android:layout_height="515dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/etoile"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="320dp"
+                android:contentDescription="@string/etoileDesc"
+                app:srcCompat="@drawable/etoile"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <TextView
+                android:id="@+id/caracteristiques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="66dp"
+                android:text="@string/caracteristique"
+                android:textColor="#0E0E0E"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup1_cara"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Q1_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="151dp">
+
+                <RadioButton
+                    android:id="@+id/hiver"
+                    android:layout_width="112dp"
+                    android:layout_height="48dp"
+                    android:text="@string/hiver" />
+
+                <RadioButton
+                    android:id="@+id/printemps"
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:text="@string/printemps" />
+
+                <RadioButton
+                    android:id="@+id/ete"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/ete" />
+
+                <RadioButton
+                    android:id="@+id/automne"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/automne" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Q1_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/caracteristiques"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="27dp"
+                android:text="@string/Q1_Cara"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q2_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiogroup1_cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="17dp"
+                android:text="@string/Q2_Cara"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nb_days"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q2_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="101dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nbDays"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="@string/nbJours"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/Q3_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nb_days"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="25dp"
+                android:text="@string/Q3_Cara"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q4_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q3_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="41dp"
+                android:text="@string/Q4_Cara"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q5_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q4_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="149dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/Q5_Cara"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/previousButton2"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/Q5_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="176dp"
+                android:layout_marginEnd="276dp"
+                android:background="#031471"
+                android:contentDescription="@string/previous"
+                app:srcCompat="@android:drawable/ic_media_rew" />
+
+            <ImageButton
+                android:id="@+id/nextButton2"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/Q5_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="267dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="57dp"
+                android:background="#031471"
+                android:contentDescription="@string/next"
+                app:srcCompat="@android:drawable/ic_media_ff" />
+
+            <TextView
+                android:id="@+id/jours"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Q2_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="290dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/jours"
+                android:textColor="#0C0C0C" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup2_cara"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Q4_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="158dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginEnd="76dp" >
+
+                <RadioButton
+                    android:id="@+id/eco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/economique" />
+
+                <RadioButton
+                    android:id="@+id/modere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modere" />
+
+                <RadioButton
+                    android:id="@+id/luxe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luxe" />
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/listeContinent"
+                android:layout_width="308dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/Q3_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="45dp" />
+
+            <CheckBox
+                android:id="@+id/français"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q5_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/français" />
+
+            <CheckBox
+                android:id="@+id/chinois"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/français"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/chinois" />
+
+            <CheckBox
+                android:id="@+id/arabe"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chinois"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/arabe" />
+
+            <CheckBox
+                android:id="@+id/anglais"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q5_Cara"
+                android:layout_marginStart="-10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/français"
+                android:text="@string/anglais" />
+
+            <CheckBox
+                android:id="@+id/russe"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anglais"
+                android:layout_marginStart="-12dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/chinois"
+                android:text="@string/russe" />
+
+            <CheckBox
+                android:id="@+id/espagnol"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/russe"
+                android:layout_marginStart="-12dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/arabe"
+                android:text="@string/espagnol" />
+
+            <CheckBox
+                android:id="@+id/italien"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q5_Cara"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/anglais"
+                android:text="@string/italien" />
+
+            <CheckBox
+                android:id="@+id/allemand"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/italien"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@+id/russe"
+                android:text="@string/allemand" />
+
+            <CheckBox
+                android:id="@+id/portugais"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/allemand"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="-7dp"
+                android:layout_toEndOf="@+id/espagnol"
+                android:text="@string/portugais" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="89dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/logoAppli"
+        app:layout_constraintEnd_toStartOf="@+id/appliName2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_planyourtrip" />
+
+    <TextView
+        android:id="@+id/appliName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/app_name"
+        android:textColor="#0961A6"
+        android:textColorHighlight="#00BCD4"
+        android:textSize="30sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonExit3"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#D9EAF1"
+        android:contentDescription="@string/buttonQuit"
+        android:src="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/consignes2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/consignes"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appliName2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

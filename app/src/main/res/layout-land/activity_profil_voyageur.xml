@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9EAF1"
+    tools:context=".Profil_Voyageur">
+
+    <TextView
+        android:id="@+id/appliName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/app_name"
+        android:textColor="#0961A6"
+        android:textColorHighlight="#00BCD4"
+        android:textSize="30sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="89dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/logoAppli"
+        app:layout_constraintEnd_toStartOf="@+id/appliName3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_planyourtrip" />
+
+    <TextView
+        android:id="@+id/consignes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/consignes"
+        android:textAlignment="center"
+        android:textColor="#121111"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appliName3" />
+
+
+    <ScrollView
+        android:layout_width="376dp"
+        android:layout_height="515dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consignes">
+
+        <RelativeLayout
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:isScrollContainer="true">
+
+            <ImageView
+                android:id="@+id/avion"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="320dp"
+                android:contentDescription="@string/avionDesc"
+                app:srcCompat="@drawable/avion"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp"
+                android:isScrollContainer="true"/>
+
+            <TextView
+                android:id="@+id/caracteristiques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="66dp"
+                android:text="@string/profilVoyageur"
+                android:textColor="#0E0E0E"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup1_cara"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="158dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginEnd="94dp">
+
+                <RadioButton
+                    android:id="@+id/seul"
+                    android:layout_width="112dp"
+                    android:layout_height="48dp"
+                    android:text="@string/Seul" />
+
+                <RadioButton
+                    android:id="@+id/amis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/entre_amis" />
+
+                <RadioButton
+                    android:id="@+id/famille"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/en_famille" />
+
+                <RadioButton
+                    android:id="@+id/couple"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/en_couple" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Q1_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/caracteristiques"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="227dp"
+                android:text="@string/Q1_Voyageur"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q2_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiogroup1_cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="17dp"
+                android:text="@string/Q2_Voyageur"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nb_voyageurs"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q2_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="101dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nbVoyageurs"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="@string/nb_voyageurs"
+                    android:textColor="#0E0E0E"
+                    android:textColorHint="#151515"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/Q3_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/nb_voyageurs"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="126dp"
+                android:text="@string/Q3_Voyageur"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q4_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q3_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="41dp"
+                android:text="@string/Q4_Voyageur"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Q5_Cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Q4_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginEnd="129dp"
+                android:text="@string/Q5_Voyageur"
+                android:textAlignment="textStart"
+                android:textColor="#121111"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup2_voyageur"
+                android:layout_width="100dp"
+                android:layout_height="102dp"
+                android:layout_below="@+id/Q3_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="232dp"
+                android:layout_marginTop="-28dp"
+                android:layout_marginEnd="44dp">
+
+                <RadioButton
+                    android:id="@+id/yes_mineur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/yes_mineur" />
+
+                <RadioButton
+                    android:id="@+id/no_mineur"
+                    android:layout_width="67dp"
+                    android:layout_height="48dp"
+                    android:text="@string/no_mineur" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/Bas_âge"
+                android:layout_width="109dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/Q4_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="242dp"
+                android:text="@string/Bas_âge" />
+
+            <CheckBox
+                android:id="@+id/enfant"
+                android:layout_width="85dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/Q4_Cara"
+                android:layout_alignEnd="@+id/Bas_âge"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="143dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="-93dp"
+                android:text="@string/Enfant" />
+
+            <CheckBox
+                android:id="@+id/Adolescent"
+                android:layout_width="113dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/Q4_Cara"
+                android:layout_alignStart="@+id/enfant"
+                android:layout_alignEnd="@+id/enfant"
+                android:layout_marginStart="94dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="-119dp"
+                android:text="@string/Adolescent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchCovid"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/Adolescent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="245dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="54dp"
+                android:text="@string/switchCovid" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/radiogroup2_voyageur"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="326dp"
+                android:layout_marginTop="219dp"
+                android:layout_marginEnd="-8dp"
+                android:text="@string/YesCovid"
+                android:textColor="#100F0F" />
+
+            <ImageButton
+                android:id="@+id/previousButton2"
+                android:layout_width="55dp"
+                android:layout_height="51dp"
+                android:layout_below="@+id/Q5_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="272dp"
+                android:background="#031471"
+                android:contentDescription="@string/previous"
+                app:srcCompat="@android:drawable/ic_media_rew" />
+
+            <ImageButton
+                android:id="@+id/nextButton2"
+                android:layout_width="53dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/Q5_Cara"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="264dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="59dp"
+                android:background="#031471"
+                android:contentDescription="@string/next"
+                app:srcCompat="@android:drawable/ic_media_ff" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/buttonExit2"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#D9EAF1"
+        android:contentDescription="@string/buttonQuit"
+        android:src="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
